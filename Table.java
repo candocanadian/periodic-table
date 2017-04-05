@@ -5,8 +5,16 @@ public class Main {
 	    Console console = System.console();
 	    boolean exit;
 	    	    do{
-	    	    String input = console.readLine("Enter the # or letter of element to see info on it or type exit to quit: ");
+	    	    
+	    	    String input = console.readLine("Enter the # or letter of element to see info on it or type exit: ");
+	    	    console.printf("Rember to type clear to clear the screen");
 	    	    exit = ( input.equalsIgnoreCase("Exit"));
+	    	    if(input.equalsIgnoreCase("clear")){
+	    	        System.out.print("\033[H\033[2J");
+System.out.flush();
+	    	        
+	    	    }
+	    	    
 	    	    if(input.equalsIgnoreCase("1") || input.equalsIgnoreCase("H") ){
 	    	        console.printf("\n--------------------------------------------------------------------------------------------------------------------------------\n1		1.0079	Hydrogen	H	-259.0	-253.0	0.09	0.14	1776	1	1s1	13.5984\n--------------------------------------------------------------------------------------------------------------------------------\n");
 	    	    }
@@ -35,6 +43,7 @@ public class Main {
 	    	    }if(input.equalsIgnoreCase("13") || input.equalsIgnoreCase("al") ){
 	    	        console.printf("\n--------------------------------------------------------------------------------------------------------------------------------\n13		26.9815	Aluminum	Al	660.0	2,467.00	2.7	8.07	1825	13	[Ne] 3s2 3p1	5.9858\n--------------------------------------------------------------------------------------------------------------------------------\n");
 	    	    }
+	    	    
 	    	    
 	    	    
     	    }while(exit == false);
