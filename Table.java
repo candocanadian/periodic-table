@@ -1,3 +1,7 @@
+/**
+ * Type the number or letter of a element to pull up info on it
+ * @author Nhial Crossman( a.k.a candocanadian ) @version 0.5
+ */
 import java.io.Console;
 public class Main {
 
